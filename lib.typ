@@ -1,8 +1,8 @@
-#let simple-icons = (name) => {
-  let path = "icons/" + name + ".svg";
-  if (exists(path)) {
-    image(path)
+#let simple-icons = name => {
+  if (name == "") {
+    emph("Icon name cannot be empty.")
   } else {
-    emph("Icon not found: " + name)
+    let path = "simple-icons/icons/" + name + ".svg"
+    image(path)
   }
 };
