@@ -1,7 +1,9 @@
-#import "lib.typ": simple-icons
+#import "lib.typ": icon
 
 = Simple Icons Example
 
-Below is a GitHub icon：
+- Rust icon
+#icon("rust")
 
-#simple-icons("git")
+- GitHub icon
+#icon("github")
