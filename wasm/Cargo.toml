@@ -7,7 +7,8 @@ edition = "2024"
 crate-type = ["cdylib"]
 
 [dependencies]
-simpleicons-rs = "15.11.0"
+# TODO: fix it when simpleicons-rs next release
+simpleicons-rs = { path = "../../../project/simpleicons-rs-builder/build/crates" }
 wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol" }
 
 [profile.release]

@@ -1,0 +1,12 @@
+[package]
+name = "simpleicons"
+version = "0.0.1"
+entrypoint = "lib.typ"
+authors = ["Cason Kervis <cscnk52@outlook.com>"]
+license = "MIT"
+compiler = "0.13.1"
+repository = "https://github.com/cscnk52/typst-simple-icons"
+description = "Access Simple Icons in Typst"
+categories = ["utility", "components"]
+disciplines = ["design"]
+keywords = ["icons"]
