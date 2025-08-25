@@ -2,10 +2,10 @@
 
 = Simple Icons Typst plugin Example
 
-#siIcon(slug: "typst", size: 10em)
+#sIcon(slug: "typst", size: 3em)
 
-#siTitle(slug: "typst", size: 5em)
+#sTitle(slug: "typst", size: 3em)
 
-#siIconLabel(slug: "simpleicons", size: 6em)
+#sIconLabel(slug: "simpleicons", size: 6em)
 
-#siIconRaw(slug: "typst")
+#sIconRaw(slug: "typst")

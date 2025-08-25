@@ -1,14 +1,13 @@
 [package]
-name = "typst-simple-icons"
-version = "0.1.0"
+name = "sicons"
+version = "15.12.0"
 edition = "2024"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-# TODO: fix it when simpleicons-rs next release
-simpleicons-rs = { path = "../../../project/simpleicons-rs-builder/build/crates" }
+simpleicons-rs = "15.12.0"
 wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol" }
 
 [profile.release]
