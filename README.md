@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cscnk52/sicons/raw/refs/heads/main/assets/img/typst-dark.png" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cscnk52/sicons/raw/refs/heads/main/assets/img/typst-light.png" />
-  <img alt="simpleicons-rs banner" src="https://github.com/cscnk52/sicons/raw/refs/heads/main/assets/img/typst-light.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/cscnk52/typst-sicons/raw/refs/heads/main/assets/img/typst-dark.png" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/cscnk52/typst-sicons/raw/refs/heads/main/assets/img/typst-light.png" />
+  <img alt="simpleicons-rs banner" src="https://github.com/cscnk52/typst-sicons/raw/refs/heads/main/assets/img/typst-light.png" />
 </picture>
 
 <div align="center">
@@ -14,20 +14,38 @@ Access High quality Simple Icons SVGs from Typst.
 
 ## Usage
 
+Function:
+
+- sIcon: return icon in SVG format
+- sTitle: return icon name
+- sIconLabel: return icon and name
+- sIconRaw: return Icon SVG code
+
+Parameters:
+
+- slug: icon slug, can be found at <https://simpleicon.org>
+- size: the icon size
+- iconColor: icons hex color, default is "default", representation Simple Icons Color
+- textColor: text color, default to `#000000`
+
+# Example
+
 ```typst
-#import "/src/lib.typ": *
+#import "@preview/sicons": *
 
-= Simple Icons Typst plugin Example
+= typst sicons package Example
 
-#sIcon(slug: "typst", size: 3em)
+#sIcon(slug: "typst", size: 1em, iconColor: "default")
 
-#sTitle(slug: "typst", size: 3em)
+#sTitle(slug: "typst", size: 1em, textColor: "#000000")
 
-#sIconLabel(slug: "simpleicons", size: 6em)
+#sIconLabel(slug: "typst", size: 1em, textColor: "#000000")
 
 #sIconRaw(slug: "typst")
 ```
 
-Output like this:
-
 ![](/test/test.svg)
+
+# License
+
+MIT
