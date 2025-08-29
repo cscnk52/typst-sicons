@@ -2,29 +2,29 @@
 
 #let p = plugin(wasm-path)
 
-#let sIcon = (slug: "typst", size: 1em, iconColor: "default") => {
-  image(p.simple_icons_slug_colored(bytes(slug), bytes(iconColor)), width: size)
+#let sicon = (slug: "typst", size: 1em, icon-color: "default") => {
+  image(p.simple_icons_slug_colored(bytes(slug), bytes(icon-color)), width: size)
 }
 
-#let sTitle = (slug: "typst", size: 1em, textColor: "#000000") => text(
+#let stitle = (slug: "typst", size: 1em, text-color: "#000000") => text(
   str(p.simple_icons_title(bytes(slug))),
   size: size,
-  fill: rgb(textColor),
+  fill: rgb(text-color),
 )
 
-#let sIconLabel = (slug: "typst", size: 1em, iconColor: "default", textColor: "#000000") => {
-  let resolvedTextColor = if textColor == "default" {
+#let sicon-label = (slug: "typst", size: 1em, icon-color: "default", text-color: "#000000") => {
+  let resolvedTextColor = if text-color == "default" {
     rgb(str(p.simple_icons_color(bytes(slug))))
   } else {
-    rgb(textColor)
+    rgb(text-color)
   }
 
   grid(
     columns: (auto, auto),
     align: center + horizon,
     gutter: size / 3,
-    sIcon(slug: slug, size: size, iconColor: iconColor), sTitle(slug: slug, size: size, textColor: resolvedTextColor),
+    sicon(slug: slug, size: size, icon-color: icon-color), stitle(slug: slug, size: size, text-color: resolvedTextColor),
   )
 }
 
-#let sIconRaw = (slug: "typst") => raw(str(p.simple_icons_slug(bytes(slug))), lang: "xml")
+#let sicon-raw = (slug: "typst") => raw(str(p.simple_icons_slug(bytes(slug))), lang: "xml")
