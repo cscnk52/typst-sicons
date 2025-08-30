@@ -44,7 +44,7 @@ Parameters:
 #sicon-raw(slug: "typst")
 ```
 
-![Example page of sicons](./test/test.svg)
+![Example page of sicons](https://github.com/cscnk52/typst-sicons/raw/refs/heads/main/test/test.svg)
 
 # License
 
