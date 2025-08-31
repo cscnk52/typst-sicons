@@ -31,17 +31,18 @@ Parameters:
 # Example
 
 ```typst
-#import "@preview/sicons:15.12.0": *
+#import "@preview/sicons:15.13.0": *
 
 = typst sicons package Example
 
 #sicon(slug: "typst", size: 1em, icon-color: "default")
 
-#stitle(slug: "typst", size: 1em, icon-color: "default", text-color: "#000000")
+#stitle(slug: "typst", size: 1em, text-color: "#000000")
 
-#sicon-label(slug: "typst", size: 1em, text-color: "#000000")
+#sicon-label(slug: "typst", size: 1em,icon-color: "default", text-color: "#000000")
 
 #sicon-raw(slug: "typst")
+
 ```
 
 ![Example page of sicons](https://github.com/cscnk52/typst-sicons/raw/refs/heads/main/test/test.svg)
