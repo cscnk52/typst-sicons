@@ -2,7 +2,7 @@
 
 #set page(height: auto)
 
-= Simple Icons Typst plugin Example
+= Typst sicons package Example
 
 #sicon(slug: "typst", size: 1em, icon-color: "default")
 
